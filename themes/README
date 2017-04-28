@@ -1,0 +1,16 @@
+linux下安装新的theme
+1.下载好主题
+2.安装:GTK2 ENGINES - GTK2 engine Murrine
+	Fedora/RedHat distros:
+	yum install gtk-murrine-engine
+
+	Ubuntu/Mint/Debian distros:
+	sudo apt-get install gtk2-engines-murrine
+
+	ArchLinux:
+	pacman -S gtk-engine-murrine
+
+3.sudo cp newtheme /use/share/themes/
+4.安装unity-tweak-tool
+	sudo apt install unity-tweak-tool
+5.set new theme in unity-tweak-tool

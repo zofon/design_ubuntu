@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "git add --all"
+git add --all
+
+echo "auto push"
+git commit -m "auto push"
+
+echo "git push"
+git push
+
+echo "sucess!"

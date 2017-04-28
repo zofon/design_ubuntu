@@ -1,0 +1,66 @@
+# /bin/bash
+#this is a script to configure my own ubuntu
+
+#Just add them to use
+add-apt-repository ppa:satyajit-happy/themes
+add-apt-repository ppa:fyrmir/livewallpaper-daily
+cp -r Wallpapers ~/Pictures/
+
+#define APT_GET,use "APT-GET" instead of "apt-get -y"
+#APT-GET="apt-get -y"
+
+#configure git
+#git config --global user.email "969493314@qq.com"
+#git config --global user.name "zofon"
+#git config --global push.default matching
+#git config --global push.default simple
+#'matching' 参数是 Git 1.x 的默认行为，其意是如果你执行 git push 但没有指定分支，它将 push 所有你本地的分支到远程仓库中对应匹配的分支。Git 2.x 默认的是 simple，意味着执行 git push 没有指定分支时，只有当前分支会被 push 到你使用 git pull 获取的代码。
+#下载我的仓库，可以选择性的下载
+#git clone git@code.aliyun.com:zhoufeng/design_ubuntu.git
+#git clone git@code.aliyun.com:zhoufeng/mptcp_detail.git
+
+apt-get -y update
+#更新整个仓库的版本信息
+
+#apt-get upgrade
+#升级软件包
+
+#安装Nvidia显卡驱动
+echo "显卡信息"
+lspci|grep VGA
+#apt-get -y install nvidia-352-dev
+#nvidia-settings;这个命令可以设置显卡
+
+gsettings set com.canonical.Unity.Launcher launcher-position Bottom
+#设置launcher的位置,放在Bottom位置
+
+#apt-get -y install numix-gtk-theme#
+#安装numix主题，这个主题是黑色的，边缘比较锋利，可以在以后需要的时候安装lnumix theme
+
+#apt-get -y install livewallpaper
+#apt-get -y install livewallpaper-config livewallpaper-indicator
+
+cp tools/* /bin/
+#copy tools into /bin/
+
+#安装flash插件
+apt-get -y install flashplugin-installer
+
+#安装部分编辑软件，vim，kate等等。
+apt-get -y install vim
+#安装vim
+#apt -y install kate
+#安装kate编辑器，kate的体积比较大，所以可以选择先不安装，以后需要的时候安装。
+
+apt-get -y install dia
+#安装dia
+
+#apt-get -y install texlive-full
+#安装texlive,it need too much time
+
+apt-get -y install r-base
+#安装R语言
+#apt-get install r-base-dev
+
+apt-get -y install ibus-sunpinyin
+#安装sunpinyin，在这里使用的是ibus框架

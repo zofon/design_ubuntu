@@ -1,0 +1,10 @@
+¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿ubuntu
+
+¿¿¿¿
+
+¿¿¿¿git
+	sudo apt install git
+	git clone https://code.aliyun.com/zhoufeng/design_ubuntu.git
+
+¿¿¿¿configure_ubuntu¿¿¿¿¿¿
+	./configure_ubuntu

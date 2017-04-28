@@ -1,0 +1,5 @@
+#!/bin/bash
+# $1 $2 $3 对应命令后面的参数
+
+echo "ssh $1@gatekeeper.nntb.no"
+ssh -o ServerAliveInterval=30 $1@gatekeeper.nntb.no -L 2000:plc.simula.nornet:443
