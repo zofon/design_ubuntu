@@ -34,6 +34,9 @@ lspci|grep VGA
 gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 #设置launcher的位置,放在Bottom位置
 
+#apt-get -y unity-tweak-tool
+#安装unity-tweak-tool，在panel中设置背景透明度。
+
 #apt-get -y install numix-gtk-theme#
 #安装numix主题，这个主题是黑色的，边缘比较锋利，可以在以后需要的时候安装lnumix theme
 
